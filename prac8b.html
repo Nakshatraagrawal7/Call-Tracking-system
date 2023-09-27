@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>RANDOM NUMBER GUESSING GAME</title>
+</head>
+<body>
+<h2>Name : Nakshatra Agrawal</h2>
+<h2>Roll Number : 21BCM070</h2><br>
+<CENTER>
+<h1>PRACTICAL - 8 (B)</h1><br>
+<h2>JavaScript Program For Random Number Guessing.</h2>
+<br><br>
+<h2>
+<script type="text/javascript">
+let randnum = Math.floor(Math.random() * 200) + 1;
+let num,i;
+let counter = 1;
+for (i = 0; i < 5; i++) {
+if (counter == 1) {
+num = parseInt(prompt("GUESS A NUMBER BETWEEN 1 TO 200 : "));
+}
+else {
+num = parseInt(prompt("( TRY NUMBER -" + counter + " ) GUESS A NUMBER BETWEEN 1 TO 200 : "));
+}
+if (num == randnum) {
+document.write("<br>");
+document.body.style.backgroundColor = 'yellow'
+document.write("CONGRATULATION'S..! You Guessed The Correct Number." );
+exit
+}
+else {
+counter = counter + 1;
+continue
+}
+}
+document.body.style.backgroundColor = 'orange'
+document.write("CORRECT NUMBER WAS : " + randnum + "<br><br><br>");
+document.write("BETTER LUCK NEXT TIME...!💯");
+</script>
+</CENTER>
+</h2>
+</body>
+</html>

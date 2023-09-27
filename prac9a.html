@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>PRACTICAL-9(A)</title>
+<style>
+body {
+background: rgb(255, 255, 255);
+background: radial-gradient(circle, rgba(255, 255, 255, 0.9391106784510679) 53%, 
+rgba(195, 195, 195, 0.6561975131849616) 100%);
+}
+</style>
+</head>
+<body>
+<h2>Name : Nakshatra Agrawal</h2>
+<h2>Roll Number : 21BCM070</h2><br>
+<CENTER>
+<h1>PRACTICAL - 9 (A)</h1><br>
+<h2 style="color:red;">JavaScript Program For Taking Person's Name As Input Till "End" Is Entered.</h2>
+    <br><br>
+    <h2>
+    <script language=javascript, type="text/javascript">
+    let name = [];
+    let i = 0;
+    while (1) {
+    name[i] = prompt("Enter NAME-" + (i + 1) + " : ");
+    if (name[i] == "END" || name[i] == "end") {
+    break
+    }
+    i++;
+    }
+    name.pop()
+    name.sort()
+    document.write("NAMES SORTED IN ALPHABETICAL ORDER :- ");
+    document.write("<br>");
+    for (j = 0; j < i; j++) {
+    document.write("<br>");
+    document.write((1 + j) + ") " + name[j]);
+    }
+    </script>
+    </CENTER>
+    </h2>
+    </body>
+    </html>
+    
